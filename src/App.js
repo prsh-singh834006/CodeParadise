@@ -8,7 +8,7 @@ class App extends Component {
         <div className="section-1 text-center">
           <Navigation />
           <div className="center">
-            <h1>Hsdy</h1>
+            <h1>Hodwy</h1>
           </div>
         </div>
         <div className="section-2">
