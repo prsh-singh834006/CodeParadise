@@ -54,6 +54,7 @@ class App extends Component {
                 <Skill heading="HTML5" percent="99" />
                 <Skill heading="Python" percent="60" />
                 <Skill heading="MySQL" percent="70" />
+                <Skill heading="MongoDB" percent="70" />
               </div>
             </div>
           </div>
