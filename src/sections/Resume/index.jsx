@@ -16,9 +16,8 @@ const Resume = () => (
           <h2 class="mb-5">Education</h2>
           <Card
             date="March 2013 - May 2017"
-            heading="GIET Institute of engineering and technology"
-            content="Even the all-powerful Pointing has no control about the blind
-              texts it is an almost unorthographic."
+            heading="Gandhi Institute of Engineering and Technology"
+            content="Excellence is our Essence"
             place="GIET Gunupur"
           />
         </div>
@@ -30,8 +29,9 @@ const Resume = () => (
             </span>
             <h3>Full Stack Developer</h3>
             <p>
-              Even the all-powerful Pointing has no control about the blind
-              texts it is an almost unorthographic.
+              Full stack web developer responsible for end-to-end web app
+              development. Built single-page applications with JavaScript on a
+              ReactJS Library.
             </p>
             <span class="school">Tata Consultancy Servics</span>
           </div>
