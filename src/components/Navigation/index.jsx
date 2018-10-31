@@ -38,23 +38,13 @@ const Navigation = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section-services">
+              <a class="nav-link" href="#section-myskills">
                 Skills
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-portfolio">
-                Portfolio
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#section-resume">
                 Resume
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-blog">
-                Blog
               </a>
             </li>
             <li class="nav-item">
