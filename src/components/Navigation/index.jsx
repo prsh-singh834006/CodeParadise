@@ -20,7 +20,7 @@ const Navigation = () => {
         </button>
 
         <a class="navbar-brand brand" href="index.html">
-          Alias
+          Transcend-D
         </a>
         <div
           class="collapse navbar-collapse justify-content-md-center"
