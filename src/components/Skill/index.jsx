@@ -30,4 +30,5 @@ Skill.defaultProps = {
   heading: '',
   percent: '85',
 };
+
 export default Skill;
