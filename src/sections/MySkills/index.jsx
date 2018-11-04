@@ -13,9 +13,9 @@ const MySkills = () => (
           </div>
         </div>
         <div className="col-lg-9 col-xl-9">
-          <Skill heading="ReactJS" percent="85" />
-          <Skill heading="HTML5" percent="99" />
-          <Skill heading="Python" percent="60" />
+          <Skill heading="ReactJS" percent="90" />
+          <Skill heading="HTML5" percent="80" />
+          <Skill heading="Python" percent="80" />
           <Skill heading="MySQL" percent="70" />
         </div>
       </div>

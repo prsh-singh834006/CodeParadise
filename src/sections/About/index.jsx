@@ -1,5 +1,5 @@
 import React from 'react';
-import pic1 from '../../static/img/section-2-img.png';
+import pic1 from '../../static/img/about.jpeg';
 
 const About = () => (
   <div className="section-about" id="section-about">

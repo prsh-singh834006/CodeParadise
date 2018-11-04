@@ -1,74 +1,91 @@
 import React from 'react';
+import { Formik, Form, Field } from 'formik';
 
 const ContactMe = () => (
-  <section class="site-section bg-light" id="section-contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 mb-5">
-          <div class="section-heading text-center">
+  <section className="site-section bg-light" id="section-contact">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-12 mb-5">
+          <div className="section-heading text-center">
             <h2>
               Wanna <strong>Start Work</strong> With Me?
             </h2>
           </div>
         </div>
-        <div class="col-md-7 mb-5 mb-md-0">
-          <form action="" class="site-form">
-            <h3 class="mb-5">Get In Touch</h3>
-            <div class="form-group">
-              <input
-                class="form-control px-3 py-4"
-                placeholder="Your Name"
-                type="text"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                class="form-control px-3 py-4"
-                placeholder="Your Email"
-                type="email"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                class="form-control px-3 py-4"
-                placeholder="Your Phone"
-                type="email"
-              />
-            </div>
-            <div class="form-group mb-5">
-              <textarea
-                class="form-control px-3 py-4"
-                cols="30"
-                rows="10"
-                placeholder="Write a Message"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                class="btn btn-primary  px-4 py-3"
-                value="Send Message"
-                type="submit"
-              />
-            </div>
-          </form>
+        <div className="col-md-7 mb-5 mb-md-0">
+          <Formik
+            initialValues={{ name: '', email: '', phone: '', message: '' }}
+            className="site-form"
+            onSubmit={(values, { setSubmitting }) => {
+              setTimeout(() => {
+                setSubmitting(false);
+              }, 1000);
+            }}
+          >
+            {({ isSubmitting }) => (
+              <Form>
+                <h3 className="mb-5">Get In Touch</h3>
+                <div className="form-group">
+                  <Field
+                    className="form-control px-3 py-4"
+                    placeholder="Your Name"
+                    type="text"
+                    name="name"
+                  />
+                </div>
+                <div className="form-group">
+                  <Field
+                    className="form-control px-3 py-4"
+                    placeholder="Your Email"
+                    type="email"
+                    name="email"
+                  />
+                </div>
+                <div className="form-group">
+                  <Field
+                    className="form-control px-3 py-4"
+                    placeholder="Your Phone"
+                    type="text"
+                    name="phone"
+                  />
+                </div>
+                <div className="form-group mb-5">
+                  <textarea
+                    className="form-control px-3 py-4"
+                    cols="30"
+                    rows="10"
+                    placeholder="Write a Message"
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    className="btn btn-primary  px-4 py-3"
+                    value="Send Message"
+                    type="submit"
+                    disabled={isSubmitting}
+                  />
+                </div>
+              </Form>
+            )}
+          </Formik>
         </div>
-        <div class="col-md-5 pl-md-5">
-          <h3 class="mb-5">My Contact Details</h3>
-          <ul class="site-contact-details">
+        <div className="col-md-5 pl-md-5">
+          <h3 className="mb-5">My Contact Details</h3>
+          <ul className="site-contact-details">
             <li>
-              <span class="text-uppercase">Email</span>
+              <span className="text-uppercase">Email</span>
               prashant13cse075@gmail.com
             </li>
             <li>
-              <span class="text-uppercase">Phone</span>
+              <span className="text-uppercase">Phone</span>
               +91 787 323 0960
             </li>
             <li>
-              <span class="text-uppercase">Fax</span>
+              <span className="text-uppercase">Fax</span>
               +91 787 323 0960
             </li>
             <li>
-              <span class="text-uppercase">Address</span>
+              <span className="text-uppercase">Address</span>
               6th Cross, Ambedkarnagar <br />
               Whitefield <br />
               Karnataka, Bangaluru
