@@ -1,0 +1,23 @@
+.resume-item {
+  padding: 40px;
+  background: #fff;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  border: 4px solid transparent;
+  &:hover {
+    border: 4px solid #57d131;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
+  }
+  & .date {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: #b3bdc6;
+    text-transform: uppercase;
+  }
+  & h3 {
+    color: #000;
+  }
+}

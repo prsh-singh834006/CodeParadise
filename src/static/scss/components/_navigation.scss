@@ -1,0 +1,22 @@
+@media (min-width: 992px) and (min-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background-color: transparent;
+  }
+  .navbar-nav > li > a {
+    color: #fff !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    position: relative;
+    color: black;
+    background-color: #fff;
+  }
+  .navbar-nav > li > a {
+    color: #000 !important;
+  }
+}

@@ -1,23 +1,27 @@
 import React, { Component } from 'react';
-import Navigation from './components/Navigation';
+import Home from './sections/Home';
+import ContactMe from './components/ContactMe';
+import Footer from './components/Footer';
+import Resume from './sections/Resume';
+import About from './sections/About';
+import MySkills from './sections/MySkills';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="section-1 text-center">
-          <Navigation />
-          <div className="center">
-            <h1>Hody</h1>
-          </div>
+        <Home />
+        <About />
+        <MySkills />
+        <div className="section-3 text-center">
+          <h1 className="color-white">
+            “Virtually nothing is impossible in this world if you just put your
+            mind to it and maintain a positive attitude.” —Lou Holtz
+          </h1>
         </div>
-        <div className="section-2">
-          <p>Something i am going to write</p>
-          <button className="btn btn-primary">Close me</button>
-        </div>
-        <div className="section-3">
-          <h1>Hello</h1>
-        </div>
+        <Resume />
+        <ContactMe />
+        <Footer />
       </React.Fragment>
     );
   }

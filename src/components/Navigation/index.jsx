@@ -3,7 +3,7 @@ import React from 'react';
 const Navigation = () => {
   return (
     <nav
-      class="navbar navbar-expand-lg site-navbar navbar-light sleep"
+      class="navbar navbar-expand-lg site-navbar navbar-light"
       id="pb-navbar"
     >
       <div class="container">
@@ -19,8 +19,16 @@ const Navigation = () => {
           <span class="navbar-toggler-icon" />
         </button>
 
-        <a class="navbar-brand" href="index.html">
-          Alias
+        <a class="navbar-brand brand" href="index.html">
+          <span
+            style={{
+              fontWeight: '900',
+              fontSize: '2rem',
+            }}
+          >
+            T
+          </span>
+          ranscend-D
         </a>
         <div
           class="collapse navbar-collapse justify-content-md-center"
@@ -38,23 +46,13 @@ const Navigation = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section-services">
-                Services
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-portfolio">
-                Portfolio
+              <a class="nav-link" href="#section-myskills">
+                Skills
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#section-resume">
                 Resume
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-blog">
-                Blog
               </a>
             </li>
             <li class="nav-item">
