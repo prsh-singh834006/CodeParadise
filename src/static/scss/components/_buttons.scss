@@ -1,0 +1,28 @@
+.btn {
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 14px;
+  &-primary {
+    color: $color-white;
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+    outline-color: $color-secondary;
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      background-color: $color-secondary;
+      border-color: $color-secondary;
+      outline-color: $color-secondary;
+    }
+  }
+}
+.td-btn {
+  color: #fff;
+  &--primary {
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+}
