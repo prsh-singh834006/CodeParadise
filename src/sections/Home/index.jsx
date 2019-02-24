@@ -6,9 +6,7 @@ const Home = () => (
     <Navigation />
     <div className="home text--center">
       <div className="center">
-        <h1 className="text--large">
-          Howdy, I am <strong>Prashant</strong>
-        </h1>
+        <h1 className="text--large">Hi, I’m Prashant. Nice to meet you.</h1>
         <p className="text--normal color-white margin-bottom--md text--center margin-top--md ">
           I design and code beautifully simple things, and I love what I do.
         </p>

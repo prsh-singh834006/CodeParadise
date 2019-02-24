@@ -1,0 +1,22 @@
+.langauge {
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+  padding: 2rem;
+  background-color: $color-white;
+  transform: translate(0, -30%);
+  border-radius: 10px;
+  & .langauge-item {
+    text-align: center;
+    & i {
+      color: $color-secondary;
+      font-size: 50px;
+    }
+    & h1 {
+      color: $color-dark;
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+    & ul li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

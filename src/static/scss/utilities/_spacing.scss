@@ -90,4 +90,15 @@
       padding-top: 3rem;
     }
   }
+  &-all {
+    &--sm {
+      padding: 1rem;
+    }
+    &--md {
+      padding: 2rem;
+    }
+    &--lg {
+      padding: 3rem;
+    }
+  }
 }

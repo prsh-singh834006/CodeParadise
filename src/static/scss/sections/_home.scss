@@ -10,20 +10,11 @@
   color: #fff;
 }
 .home-wrapper {
-  background-color: #2098d1;
+  background-color: $color-secondary;
 
   overflow: hidden;
 }
 @media (min-width: 992px) and (min-width: 768px) {
-  .home {
-    & > .center {
-      // margin: 0;
-      // position: absolute;
-      // top: 50%;
-      // left: 50%;
-      // transform: translate(-50%, -50%);
-    }
-  }
 }
 
 @media (max-width: 576px) {

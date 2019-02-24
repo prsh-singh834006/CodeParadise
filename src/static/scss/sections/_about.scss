@@ -3,6 +3,13 @@
   background-color: white;
   text-align: center;
   text-align: justify;
+  h1 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  p {
+    line-height: 1.956rem;
+  }
 }
 
 @media (min-width: 992px) and (min-width: 768px) {

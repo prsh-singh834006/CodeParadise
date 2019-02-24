@@ -4,17 +4,27 @@
   letter-spacing: 0.1em;
   padding: 10px 14px;
   &-primary {
-    color: $color-white;
-    background-color: $color-secondary;
-    border-color: $color-secondary;
-    outline-color: $color-secondary;
+    color: $color-dark;
+    background-color: $color-white;
+    border-color: $color-white;
+    outline-color: $color-white;
     &:hover,
     &:active,
     &:focus,
     &:visited {
+      background-color: $color-white;
+      border-color: $color-white;
+      outline-color: $color-white;
+    }
+  }
+  &-submit {
+    color: $color-dark;
+    border: 1px solid $color-secondary;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $color-white;
       background-color: $color-secondary;
-      border-color: $color-secondary;
-      outline-color: $color-secondary;
     }
   }
 }
