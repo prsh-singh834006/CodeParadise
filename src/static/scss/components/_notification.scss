@@ -1,0 +1,12 @@
+.push-notification {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  width: 30vw;
+  z-index: 10;
+  & h5 {
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+  }
+}
