@@ -11,8 +11,10 @@
 }
 .home-wrapper {
   background-color: $color-secondary;
-
   overflow: hidden;
+  img {
+    width: 15vw;
+  }
 }
 @media (min-width: 992px) and (min-width: 768px) {
 }

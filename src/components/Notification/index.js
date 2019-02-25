@@ -2,12 +2,10 @@ import React from 'react';
 import { initialize } from '../../initializePushNotification';
 
 const FIREBASE_MESSAGING = initialize();
+
 class Notification extends React.PureComponent {
   state = {
-    notification: {
-      title: 'Well i am long title',
-      body: 'Wow i got amazing body',
-    },
+    notification: null,
   };
   componentDidMount() {
     const _this = this;

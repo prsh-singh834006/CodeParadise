@@ -6,8 +6,11 @@ importScripts(
 let config = {
   messagingSenderId: '347154365256',
 };
+
 firebase.initializeApp(config);
+
 const messaging = firebase.messaging();
+
 messaging.setBackgroundMessageHandler(payload => {
   const title = payload.notification.title;
   console.log('payload', payload.notification.icon);
