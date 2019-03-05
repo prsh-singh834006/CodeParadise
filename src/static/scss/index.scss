@@ -1,4 +1,5 @@
 @import 'bulma/sass/utilities/_all.sass';
+@import 'bulma/sass/layout/_all.sass';
 @import 'bulma/sass/components/_all.sass';
 @import 'bulma/sass/elements/_all.sass';
 @import 'bulma/sass/grid/_all.sass';
@@ -16,7 +17,7 @@ html,
   padding: 0px;
   height: 100%;
   position: relative;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Lato',
     'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
 }

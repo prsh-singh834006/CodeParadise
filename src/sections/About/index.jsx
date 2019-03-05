@@ -14,6 +14,14 @@ const About = () => (
       developers Integrate your website into an easy to use content management
       system
     </p>
+    <ul>
+      <li>Create responsive websites that work on a wide range of devices</li>
+      <li>Assist with production of clean and functional design </li>
+      <li>Bridge communication gap between designers and developers </li>
+      <li>
+        Integrate your website into an easy to use content management system
+      </li>
+    </ul>
   </div>
 );
 

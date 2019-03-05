@@ -31,6 +31,7 @@ const Langauge = () => (
         </p>
         <ul>
           <li>NodeJS</li>
+          <li>NestJS</li>
           <li>Javascript</li>
           <li>Typescript</li>
           <li>Java</li>

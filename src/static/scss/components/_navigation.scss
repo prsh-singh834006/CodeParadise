@@ -102,7 +102,6 @@ a:hover {
   align-items: center;
   flex-direction: column;
   direction: column;
-  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0px;
@@ -140,12 +139,4 @@ a:hover {
 }
 
 @media (max-width: 576px) {
-  // .navbar {
-  //   position: relative;
-  //   color: black;
-  //   background-color: #fff;
-  // }
-  // .navbar-nav > li > a {
-  //   color: #000 !important;
-  // }
 }
