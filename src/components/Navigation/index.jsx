@@ -16,13 +16,13 @@ class Navigation extends React.Component {
             <a href="#section-about">
               <li>About</li>
             </a>
-            <a href="#">
-              <li>Info</li>
+            <a href="#section-myskills">
+              <li>Skills</li>
             </a>
             <a href="#">
-              <li>Contact</li>
+              <li>Tech Stack</li>
             </a>
-            <a href="https://erikterwan.com/" target="_blank">
+            <a href="#" target="_blank">
               <li>Show me more</li>
             </a>
           </ul>

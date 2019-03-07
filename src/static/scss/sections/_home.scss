@@ -8,6 +8,11 @@
   justify-content: center;
   align-items: center;
   color: #fff;
+  & .home__btn {
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+  }
 }
 .home-wrapper {
   background-color: $color-secondary;

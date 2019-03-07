@@ -7,6 +7,7 @@ import About from './sections/About';
 import MySkills from './sections/MySkills';
 import Langauge from './components/Langauge';
 import Notification from './components/Notification';
+import Projects from './sections/Projects';
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
         </div>
         <Langauge />
         <MySkills />
+        <Projects />
         <Resume />
         {/* <ContactMe /> */}
         <Footer />
