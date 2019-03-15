@@ -6,14 +6,12 @@ import Resume from './sections/Resume';
 import About from './sections/About';
 import MySkills from './sections/MySkills';
 import Langauge from './components/Langauge';
-import Notification from './components/Notification';
 import Projects from './sections/Projects';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Notification />
         <Home />
         <About />
         <div className="section-3 text-center">

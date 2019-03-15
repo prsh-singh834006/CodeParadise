@@ -1,10 +1,27 @@
 .section-resume {
   .container {
-    min-height: 100%;
     opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    & blockquote::before {
+      position: relative;
+      content: '\201C';
+      display: block;
+      width: 100%;
+      text-align: center;
+      line-height: 0.8;
+      font-size: 66px;
+      font-family: 'Lato', 'Courier New';
+      color: #045f8c;
+    }
+    & .heading {
+      font-size: 40px;
+      font-weight: 400;
+      font-family: 'Lato';
+      text-transform: none;
+      margin-bottom: 3rem;
+    }
   }
 }

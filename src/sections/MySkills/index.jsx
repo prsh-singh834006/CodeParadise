@@ -5,7 +5,7 @@ import Html5Logo from '../../static/img/html5.png';
 import NestJsLogo from '../../static/img/nestjs.svg';
 import TypeScriptLogo from '../../static/img/typescript.svg';
 import GraphQlLogo from '../../static/img/graphql.png';
-import MySqlLogo from '../../static/img/mysql.svg';
+import FirebaseLogo from '../../static/img/firebase.png';
 import NodeJSLogo from '../../static/img/nodejs.svg';
 import SassLogo from '../../static/img/sass.svg';
 
@@ -20,28 +20,24 @@ const MySkills = () => (
               <img className="text--center" src={ReactJsLogo} alt="reactjs" />
             </div>
             <h1>ReactJS</h1>
-            <p>ReactJS is a javascript library</p>
           </div>
           <div className="column">
             <div className="image">
               <img className="is-centered" src={NestJsLogo} alt="reactjs" />
             </div>
-            <h1>ReactJS</h1>
-            <p>ReactJS is a javascript library</p>
+            <h1>NestJS</h1>
           </div>
           <div className="column">
             <div className="image">
               <img className="is-centered" src={TypeScriptLogo} alt="reactjs" />
             </div>
-            <h1>ReactJS</h1>
-            <p>ReactJS is a javascript library</p>
+            <h1>Typescript</h1>
           </div>
           <div className="column">
             <div className="image">
               <img className="is-centered" src={Html5Logo} alt="reactjs" />
             </div>
             <h1>ReactJS</h1>
-            <p>ReactJS is a javascript library</p>
           </div>
         </div>
         <div className="columns is-vcentered">
@@ -53,15 +49,15 @@ const MySkills = () => (
           </div>
           <div className="column">
             <div className="image">
-              <img className="is-centered" src={MySqlLogo} alt="reactjs" />
+              <img className="is-centered" src={FirebaseLogo} alt="reactjs" />
             </div>
-            <h1>My SQL</h1>
+            <h1>Firebase</h1>
           </div>
           <div className="column">
             <div className="image">
-              <img className="is-centered" src={NodeJSLogo} alt="reactjs" />
+              <img className="is-centered" src={ReactJsLogo} alt="reactjs" />
             </div>
-            <h1>Node JS</h1>
+            <h1>React native</h1>
           </div>
           <div className="column">
             <div className="image">

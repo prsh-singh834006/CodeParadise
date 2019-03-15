@@ -4,10 +4,21 @@ import Card from '../../components/Card';
 const Resume = () => (
   <section class="site-section bg-light section-resume" id="section-resume">
     <div class="container">
-      <div class="section-heading text-center">
-        <h2 className="text--center">
-          My <strong className="color-secondary">Resume</strong>
-        </h2>
+      <div class="text-center">
+        <h2 className="text--center heading">Testimonials</h2>
+        <blockquote>
+          <p>
+            Working with Prashant was better than expected and we had really
+            high expectations. He is an incredibly talented developer but what
+            really makes him stand out is his work ethic and steady approach.
+            Time after time, and without us asking, he added enhancements and
+            improvements that resulted in a better end product for us and our
+            clients.
+          </p>
+          <footer>
+            <p>M</p>
+          </footer>
+        </blockquote>
       </div>
     </div>
   </section>

@@ -8,21 +8,21 @@ const config = {
   messagingSenderId: '347154365256',
 };
 
-firebase.initializeApp(config);
-
 export const initialize = () => {
+  firebase.initializeApp(config);
+
   const FIREBASE_MESSAGING = firebase.messaging();
-  const FIREBASE_DATABASE = firebase.database();
+
   FIREBASE_MESSAGING.usePublicVapidKey(
     'BFPHo3ah1Fpt-S7Tzw5dLA_AFnqpEYrzaeX7XTf_E5mlefV5aCvDex9gJC2jBsWC8N0rb89gZboXS_-mlQ76o-E'
   );
+  const FIREBASE_DATABASE = firebase.database();
 
   FIREBASE_MESSAGING.requestPermission().then(() => handleTokenRefresh());
 
   const handleTokenRefresh = () => {
     return FIREBASE_MESSAGING.getToken()
       .then(currentToken => {
-        console.log(currentToken);
         FIREBASE_DATABASE.ref('/user')
           .push({
             token: currentToken,
@@ -38,5 +38,5 @@ export const initialize = () => {
     console.log('Message Received', data);
   });
 
-  return FIREBASE_MESSAGING;
+  return firebase;
 };

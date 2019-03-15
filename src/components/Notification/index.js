@@ -7,8 +7,10 @@ class Notification extends React.PureComponent {
   state = {
     notification: null,
   };
+
   componentDidMount() {
     const _this = this;
+
     FIREBASE_MESSAGING.onMessage(message => {
       _this.setState(prevState => ({
         ...prevState,
@@ -20,6 +22,7 @@ class Notification extends React.PureComponent {
   clearNotification = () => {
     this.setState(prevState => ({ ...prevState, notification: null }));
   };
+
   render() {
     const { notification } = this.state;
 

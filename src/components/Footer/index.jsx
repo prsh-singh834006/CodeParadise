@@ -1,4 +1,6 @@
 import React from 'react';
+import Form from '../Form';
+import { FireBaseContext } from '../../firebaseContext';
 
 class Footer extends React.PureComponent {
   state = {
@@ -30,53 +32,22 @@ class Footer extends React.PureComponent {
 
     return (
       <footer className="footer">
-        <div className={modalClassName}>
-          <div className="modal-background" />
-          <div className="modal-content bgcolor-white padding-all--md">
-            <div classNameName="">
-              <form>
-                <div className="field">
-                  <label className="label">Name</label>
-                  <div className="control">
-                    <input
-                      className="input"
-                      type="text"
-                      placeholder="Text input"
-                    />
-                  </div>
-                </div>
-                <div className="field">
-                  <label className="label">Email</label>
-                  <div className="control">
-                    <input
-                      className="input"
-                      type="text"
-                      placeholder="Text input"
-                    />
-                  </div>
-                </div>
-                <div className="field">
-                  <label className="label">Message</label>
-                  <div className="control">
-                    <textarea className="textarea" placeholder="Textarea" />
-                  </div>
-                </div>
-                <div className="field margin-top--md">
-                  <div className="control">
-                    <button type="submit" className="btn btn-submit">
-                      Send
-                    </button>
-                  </div>
-                </div>
-              </form>
+        {isOpen ? (
+          <div className={modalClassName}>
+            <div className="modal-background" />
+            <div className="modal-content bgcolor-white padding-all--md">
+              <FireBaseContext.Consumer>
+                {firebase => <Form firebase={firebase} />}
+              </FireBaseContext.Consumer>
             </div>
+            <button
+              onClick={this.handleClose}
+              className="modal-close is-large"
+              aria-label="close"
+            />
           </div>
-          <button
-            onClick={this.handleClose}
-            className="modal-close is-large"
-            aria-label="close"
-          />
-        </div>
+        ) : null}
+
         <div className="text--center hireme">
           <button className="btn btn-primary" onClick={this.handleOpen}>
             Send me a Message
