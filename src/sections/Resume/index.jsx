@@ -16,7 +16,7 @@ const Resume = () => (
             clients.
           </p>
           <footer>
-            <p>M</p>
+            <p>Prashant Kumar</p>
           </footer>
         </blockquote>
       </div>

@@ -4,6 +4,7 @@
 @import 'bulma/sass/elements/_all.sass';
 @import 'bulma/sass/grid/_all.sass';
 @import 'bulma/sass/base/_all.sass';
+@import '../../../node_modules/aos/dist/aos.css';
 @import 'settings';
 @import 'utilities';
 @import 'components';
@@ -38,6 +39,7 @@ html,
   align-items: center;
   opacity: 0.9;
   background-color: #8c43ff;
+  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   // background-image: url('../img/about.jpeg');
   height: 60vh;
   h1 {
@@ -103,4 +105,19 @@ h5 {
 }
 .grow:hover {
   transform: scale(1.1);
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    display: inline-block;
+    padding: 10px;
+    line-height: 2;
+    margin-right: 10px;
+    img {
+      width: 100px;
+    }
+  }
 }

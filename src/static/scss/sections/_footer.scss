@@ -13,12 +13,14 @@
   .container {
     padding: 7rem 0px 10px 0px;
     .social-icons {
-      i {
-        color: $color-white;
-        font-size: 30px;
-      }
-      span {
-        margin: 30px;
+      & .social-item {
+        & .icon {
+          margin: 10px;
+          & i {
+            color: #fff !important;
+            font-size: 30px !important;
+          }
+        }
       }
     }
   }

@@ -18,25 +18,25 @@ export const initialize = () => {
   );
   const FIREBASE_DATABASE = firebase.database();
 
-  FIREBASE_MESSAGING.requestPermission().then(() => handleTokenRefresh());
+  // FIREBASE_MESSAGING.requestPermission().then(() => handleTokenRefresh());
 
-  const handleTokenRefresh = () => {
-    return FIREBASE_MESSAGING.getToken()
-      .then(currentToken => {
-        FIREBASE_DATABASE.ref('/user')
-          .push({
-            token: currentToken,
-          })
-          .catch(e => console.log(e));
-      })
-      .catch(e => console.log(e));
-  };
+  // const handleTokenRefresh = () => {
+  //   return FIREBASE_MESSAGING.getToken()
+  //     .then(currentToken => {
+  //       FIREBASE_DATABASE.ref('/user')
+  //         .push({
+  //           token: currentToken,
+  //         })
+  //         .catch(e => console.log(e));
+  //     })
+  //     .catch(e => console.log(e));
+  // };
 
-  FIREBASE_MESSAGING.onTokenRefresh(handleTokenRefresh);
+  // FIREBASE_MESSAGING.onTokenRefresh(handleTokenRefresh);
 
-  FIREBASE_MESSAGING.onMessage(data => {
-    console.log('Message Received', data);
-  });
+  // FIREBASE_MESSAGING.onMessage(data => {
+  //   console.log('Message Received', data);
+  // });
 
   return firebase;
 };

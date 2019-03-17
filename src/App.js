@@ -14,7 +14,7 @@ class App extends Component {
       <React.Fragment>
         <Home />
         <About />
-        <div className="section-3 text-center">
+        <div className="section-3 text-center is-hidden-mobile">
           <h1 className="color-white">
             “Virtually nothing is impossible in this world if you just put your
             mind to it and maintain a positive attitude.” —Lou Holtz

@@ -54,20 +54,24 @@ class Footer extends React.PureComponent {
           </button>
         </div>
         <div className="text--center container">
-          <div classNameName="social-icons margin-bottom--lg">
+          <div className="social-icons margin-bottom--lg">
             <a href="#" className="social-item">
               <span className="icon">
-                <i className="fab fa-facebook-square" />{' '}
+                <i className="fab fa-facebook-square" />
+              </span>
+            </a>
+            <a
+              href="https://github.com/prsh-singh834006"
+              className="social-item"
+              target="_blank"
+            >
+              <span className="icon">
+                <i className="fab fa-github-square" />
               </span>
             </a>
             <a href="#" className="social-item">
               <span className="icon">
-                <i classame="fab fa-github" />{' '}
-              </span>
-            </a>
-            <a href="#" className="social-item">
-              <span className="icon">
-                <i className="fab fa-linkedin" />{' '}
+                <i className="fab fa-linkedin" />
               </span>
             </a>
           </div>

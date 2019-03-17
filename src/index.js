@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AOS from 'aos';
 import { initialize } from './initializePushNotification';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './static/scss/index.scss';
 import { FireBaseContext } from './firebaseContext';
+
+AOS.init();
 
 const firebase = initialize();
 

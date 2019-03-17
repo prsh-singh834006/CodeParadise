@@ -10,19 +10,19 @@ class Navigation extends React.Component {
           <span />
           <span />
           <ul id="menu">
-            <a href="#">
+            <a href="#" className="navigation-link">
               <li>Home</li>
             </a>
-            <a href="#section-about">
+            <a href="#section-about" className="navigation-link">
               <li>About</li>
             </a>
-            <a href="#section-myskills">
+            <a href="#section-myskills" className="navigation-link">
               <li>Skills</li>
             </a>
-            <a href="#">
+            <a href="#" className="navigation-link">
               <li>Tech Stack</li>
             </a>
-            <a href="#" target="_blank">
+            <a href="#" target="_blank" className="navigation-link">
               <li>Show me more</li>
             </a>
           </ul>

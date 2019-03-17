@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Skill = ({ imgSrc, heading }) => (
-  <div className="slider-item">
-    <img src={imgSrc} className="grow" alt="Skills" />
-    <div className="heading">
-      <p>{heading}</p>
+const Skill = ({ heading, logo }) => (
+  <div className="column is-centered is-6" data-aos="zoom-in-down">
+    <div className="image">
+      <img className="text--center" src={logo} alt="reactjs" />
     </div>
+    <h1>{heading}</h1>
   </div>
 );
 
@@ -19,7 +19,7 @@ Skill.propTypes = {
 
 Skill.defaultProps = {
   heading: '',
-  percent: '85',
+  logo: '',
 };
 
 export default Skill;

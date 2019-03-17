@@ -1,11 +1,11 @@
-a {
+a.navigation-link {
   text-decoration: none;
   color: #232323;
 
   transition: color 0.3s ease;
 }
 
-a:hover {
+a.navigation-link:hover {
   color: tomato;
 }
 

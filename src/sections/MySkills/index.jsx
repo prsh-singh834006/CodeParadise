@@ -6,68 +6,97 @@ import NestJsLogo from '../../static/img/nestjs.svg';
 import TypeScriptLogo from '../../static/img/typescript.svg';
 import GraphQlLogo from '../../static/img/graphql.png';
 import FirebaseLogo from '../../static/img/firebase.png';
-import NodeJSLogo from '../../static/img/nodejs.svg';
-import SassLogo from '../../static/img/sass.svg';
+import MultiDeviceImg from '../../static/img/multidevice.png';
+import NodeJsLogo from '../../static/img/node.png';
+
+const skills = [
+  {
+    title: 'ReactJS',
+    logo: ReactJsLogo,
+  },
+  {
+    title: 'NestJS',
+    logo: NestJsLogo,
+  },
+  {
+    title: 'Typescript',
+    logo: TypeScriptLogo,
+  },
+  {
+    title: 'HTML 5',
+    logo: Html5Logo,
+  },
+  {
+    title: 'Graphql',
+    logo: GraphQlLogo,
+  },
+  {
+    title: 'Firebase',
+    logo: FirebaseLogo,
+  },
+  {
+    title: 'React Native',
+    logo: ReactJsLogo,
+  },
+];
 
 const MySkills = () => (
   <div className="section-skills" id="section-myskills">
     <h2>Technologies i have worked with</h2>
+    <div className="container">
+      <p>
+        Since beginning my journey as a freelance developer nearly 2 years ago,
+        I've done remote work for agencies, consulted for startups, and
+        collaborated with talented people to create digital products for both
+        business and consumer use. I'm quietly confident, naturally curious, and
+        perpetually working on improving my chops one design problem at a time.
+      </p>
+      <hr />
+    </div>
     <div className="section">
       <div className="margin-bottom--lg container">
-        <div className="columns is-vcentered is-variable is-4">
-          <div className="column is-centered">
-            <div className="image">
-              <img className="text--center" src={ReactJsLogo} alt="reactjs" />
+        <div className="columns is-vcentered is-multiline">
+          <div className="column is-6">
+            <div className="columns is-multiline">
+              <div className="column is-12">
+                <h1>Web Development</h1>
+                <p>
+                  Since beginning my journey as a freelance developer nearly 2
+                  years ago, I've done remote work for agencies, consulted for
+                  startups, and collaborated with talented people to create
+                  digital products for both business and consumer use. I'm
+                  quietly confident, naturally curious, and perpetually working
+                  on improving my chops one design problem at a time.
+                </p>
+                <ul className="logos">
+                  <li>
+                    <img src={TypeScriptLogo} />
+                  </li>
+                  <li>
+                    <img src={NodeJsLogo} />
+                  </li>
+                  <li>
+                    <img src={FirebaseLogo} />
+                  </li>
+                </ul>
+              </div>
+              {/* {skills.map(item => (
+                <Skill heading={item.title} logo={item.logo} />
+              ))} */}
             </div>
-            <h1>ReactJS</h1>
           </div>
-          <div className="column">
-            <div className="image">
-              <img className="is-centered" src={NestJsLogo} alt="reactjs" />
-            </div>
-            <h1>NestJS</h1>
-          </div>
-          <div className="column">
-            <div className="image">
-              <img className="is-centered" src={TypeScriptLogo} alt="reactjs" />
-            </div>
-            <h1>Typescript</h1>
-          </div>
-          <div className="column">
-            <div className="image">
-              <img className="is-centered" src={Html5Logo} alt="reactjs" />
-            </div>
-            <h1>ReactJS</h1>
-          </div>
-        </div>
-        <div className="columns is-vcentered">
-          <div className="column is-centered">
-            <div className="image">
-              <img className="text--center" src={GraphQlLogo} alt="reactjs" />
-            </div>
-            <h1>GraphQL</h1>
-          </div>
-          <div className="column">
-            <div className="image">
-              <img className="is-centered" src={FirebaseLogo} alt="reactjs" />
-            </div>
-            <h1>Firebase</h1>
-          </div>
-          <div className="column">
-            <div className="image">
-              <img className="is-centered" src={ReactJsLogo} alt="reactjs" />
-            </div>
-            <h1>React native</h1>
-          </div>
-          <div className="column">
-            <div className="image">
-              <img className="is-centered" src={SassLogo} alt="reactjs" />
-            </div>
-            <h1>Sass</h1>
+          <div className="column is-6">
+            <img
+              data-aos="fade-left"
+              src={MultiDeviceImg}
+              style={{ width: '100%' }}
+              alt=""
+            />
           </div>
         </div>
       </div>
     </div>
+    <div className="section" />
   </div>
 );
 
