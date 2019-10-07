@@ -7,9 +7,10 @@ class Projects extends React.PureComponent {
         <h1>Recent works :)</h1>
         <div className="columns">
           <div className="column">
-            <div className="card">
+            <div className="card" data-aos="zoom-in">
               <div className="overlay">
                 <h3>Code paradise</h3>
+                <a href="#">Visit</a>
               </div>
               <div className="card-image">
                 <img
@@ -20,9 +21,10 @@ class Projects extends React.PureComponent {
             </div>
           </div>
           <div className="column">
-            <div className="card">
+            <div className="card" data-aos="zoom-in">
               <div className="overlay">
                 <h3>Python Web scrapping</h3>
+                <a href="#">Visit</a>
               </div>
               <div className="card-image">
                 <img
@@ -33,9 +35,10 @@ class Projects extends React.PureComponent {
             </div>
           </div>
           <div className="column">
-            <div className="card">
+            <div className="card" data-aos="zoom-in">
               <div className="overlay">
                 <h3>Lerna e-commerce</h3>
+                <a href="#">Visit</a>
               </div>
               <div className="card-image">
                 <img
@@ -48,9 +51,10 @@ class Projects extends React.PureComponent {
         </div>
         <div className="columns">
           <div className="column">
-            <div className="card">
+            <div className="card" data-aos="zoom-in">
               <div className="overlay">
                 <h3>Reverse hash</h3>
+                <a href="#">Visit</a>
               </div>
               <div className="card-image">
                 <img
@@ -61,9 +65,10 @@ class Projects extends React.PureComponent {
             </div>
           </div>
           <div className="column">
-            <div className="card">
+            <div className="card" data-aos="zoom-in">
               <div className="overlay">
                 <h3>Code paradise</h3>
+                <a href="#">Visit</a>
               </div>
               <div className="card-image">
                 <img
@@ -74,9 +79,10 @@ class Projects extends React.PureComponent {
             </div>
           </div>
           <div className="column">
-            <div className="card">
+            <div className="card" data-aos="zoom-in">
               <div className="overlay">
                 <h3>Code paradise</h3>
+                <a href="#">Visit</a>
               </div>
               <div className="card-image">
                 <img
